@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Naamkaran/static/css/main.60397a2e.css",
+    "main.js": "/Naamkaran/static/js/main.ab45901c.js",
+    "index.html": "/Naamkaran/index.html",
+    "main.60397a2e.css.map": "/Naamkaran/static/css/main.60397a2e.css.map",
+    "main.ab45901c.js.map": "/Naamkaran/static/js/main.ab45901c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60397a2e.css",
+    "static/js/main.ab45901c.js"
+  ]
+}
