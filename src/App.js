@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Naamkaran from './components/Header/Header';
+import InputBar from './components/InputBar/InputBar';
+import ResultContainer from './components/ResultContainer/ResultContainer';
+import name from '@rstacruz/startup-name-generator';
+
+// const name = require('@rstacruz/startup-name-generator');
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [title, setTitle] = useState('Naamkaran');
+    const [input, setInput] = useState('');
+    const [result, setResult] = useState([])
+    
+
+    const handleInputChange = (text) => {
+        setInput(text);
+    
+        if(text.length == 0){
+            setResult([]);
+        }
+        else{
+            setResult(name(text));
+        }
+    };
+
+    return (
+        
+        <>
+            <Naamkaran title={title} input={input} />
+            <InputBar onInputChange={handleInputChange} />
+            <ResultContainer result={result} />
+        </>
+    );
 }
 
 export default App;

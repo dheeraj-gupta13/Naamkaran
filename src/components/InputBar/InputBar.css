@@ -1,0 +1,19 @@
+.input-bar-container{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.input-bar{
+    border: none;
+    font-size: large;
+    height: 35px;
+    width: 430px;
+    border-radius: 50px;
+    padding: 8px 15px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255,255,255,0.5);
+}

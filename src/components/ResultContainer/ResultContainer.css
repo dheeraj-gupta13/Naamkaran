@@ -1,0 +1,31 @@
+.result-container{
+    display: flex;
+    /* flex-direction: ; */
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.results{
+    color: #4b4b4b;
+    margin: 10px 15px;
+    padding: 10px 20px;
+    min-width: 75px;
+    background: #dfbb5b;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+    transition: background 0.35s;
+    font-weight:bold;
+
+    display: flex;
+    justify-content: center;
+}
+
+.results:hover{
+    background: #fbc531;
+}
+
+.link{
+    text-decoration: none;
+}
